@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8a4853;
+  --color-primary-container: #a6606b;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffbff;
+  --color-primary-fixed: #ffd9dd;
+  --color-primary-fixed-dim: #ffb2bc;
+  --color-on-primary-fixed: #3a0915;
+  --color-on-primary-fixed-variant: #70343e;
+
+  --color-secondary: #695b5f;
+  --color-secondary-container: #eedbe0;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #6d5f63;
+  --color-secondary-fixed: #f1dee3;
+  --color-secondary-fixed-dim: #d4c2c7;
+  --color-on-secondary-fixed: #23191d;
+
+  --color-tertiary: #735c00;
+  --color-tertiary-container: #cba72f;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #4e3d00;
+  --color-tertiary-fixed: #ffe088;
+  --color-tertiary-fixed-dim: #e9c349;
+  --color-on-tertiary-fixed: #241a00;
+
+  --color-surface: #fcf9f7;
+  --color-surface-dim: #dcd9d8;
+  --color-surface-bright: #fcf9f7;
+  --color-surface-variant: #e5e2e0;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f1;
+  --color-surface-container: #f0edeb;
+  --color-surface-container-high: #eae8e6;
+  --color-surface-container-highest: #e5e2e0;
+
+  --color-on-surface: #1b1c1b;
+  --color-on-surface-variant: #524345;
+  --color-outline: #857374;
+  --color-outline-variant: #d7c1c3;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+}
+
+:root {
+  font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  direction: rtl;
+  background-color: #fcf9f7;
+  color: #1b1c1b;
+  font-family: 'Vazirmatn', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Material Symbols font display */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Spacing & Typography classes to match Stitch design output */
+.px-margin-mobile { padding-left: 1.25rem; padding-right: 1.25rem; }
+.px-margin { padding-left: 3rem; padding-right: 3rem; }
+.py-space-xs { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-space-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-space-md { padding-top: 1rem; padding-bottom: 1rem; }
+.py-space-lg { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-space-xl { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.p-space-xs { padding: 0.25rem; }
+.p-space-sm { padding: 0.5rem; }
+.p-space-md { padding: 1rem; }
+.p-space-lg { padding: 1.5rem; }
+.p-space-xl { padding: 2.5rem; }
+.gap-space-xs { gap: 0.25rem; }
+.gap-space-sm { gap: 0.5rem; }
+.gap-space-md { gap: 1rem; }
+.gap-space-lg { gap: 1.5rem; }
+.gap-space-xl { gap: 2.5rem; }
+.mb-space-xs { margin-bottom: 0.25rem; }
+.mb-space-sm { margin-bottom: 0.5rem; }
+.mb-space-md { margin-bottom: 1rem; }
+.mb-space-lg { margin-bottom: 1.5rem; }
+.mb-space-xl { margin-bottom: 2.5rem; }
+.mt-space-xs { margin-top: 0.25rem; }
+.mt-space-sm { margin-top: 0.5rem; }
+.mt-space-md { margin-top: 1rem; }
+.mt-space-lg { margin-top: 1.5rem; }
+.mt-space-xl { margin-top: 2.5rem; }
+
+.font-display-hero {
+  font-family: 'Noto Serif', 'Vazirmatn', serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.font-headline-lg {
+  font-family: 'Noto Serif', 'Vazirmatn', serif;
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.font-headline-md {
+  font-family: 'Noto Serif', 'Vazirmatn', serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.font-headline-sm {
+  font-family: 'Noto Serif', 'Vazirmatn', serif;
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.font-body-md {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.font-body-sm {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.font-label-lg {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.font-label-md {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+
+.font-label-sm {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  font-weight: 600;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f3f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7c1c3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a4853;
+}

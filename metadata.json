@@ -1,0 +1,6 @@
+{
+  "name": "Lynda Lingerie | وب‌سایت لوکس لیندا",
+  "description": "فروشگاه آنلاین آتلیه تخصصی لباس خواب، لانژ و ست‌های دانتل ابریشمی لیندا (Lynda Lingerie) با طراحی اختصاصی، کامپوننت‌های تعاملی و بهینه‌سازی شده برای گیت‌هاب.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
